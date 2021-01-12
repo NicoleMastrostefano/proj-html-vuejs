@@ -10,3 +10,14 @@
   display: table;
   clear: both;
 }
+
+@mixin button {
+  button {
+  color: white;
+  padding: 10px 18px;
+  background-color: #69AA53;
+  border-radius: 20px;
+  cursor:pointer;
+  border: 0px;
+  }
+}

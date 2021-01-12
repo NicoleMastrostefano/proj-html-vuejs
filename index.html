@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <title></title>
@@ -21,6 +21,7 @@
           <img src="img/avada-drivers-logo-1x.png" alt="">
           <ul>
             <li v-for="(item,index) in nav"><a href="#"v-on:click="SetActive(index)"v-bind:class="(active == index) ? 'active' : ''">{{item.name}}</a></li>
+            <button type="button" name="">BOOK NOW</button>
           </ul>
         </div>
       </header>
@@ -28,8 +29,63 @@
         <div id="jumbotron">
           <h1>Drive with Avada</h1>
           <h4>We offer the finest driving tuition money can buy</h4>
-          </div>
         </div>
+        <section id="first_lesson">
+          <div id="general_info">
+            <h2>Get Behind The Wheel</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh.
+            </small>
+          </div>
+          <div id="registration_panel">
+            <h3>First Lesson Free!</h3>
+            <small>When you make a block booking with us your first lesson is included free.</small>
+            <input type="text" name="" value=""placeholder="Your name*">
+            <input type="email"placeholder="Email*">
+            <input type="text" name="" value=""placeholder="Telephone">
+            <input type="text" name="" value=""placeholder="Location">
+            <button type="button" name="button">REQUEST A CALLBACK</button>
+          </div>
+        </section>
+        <section id="courses">
+          <div id="car_image">
+            <div>
+              <h2>Start Learning to Drive Today</h2>
+              <span>Give us a call to schedule your first driving lesson</span>
+            </div>
+            <h3><i class="fas fa-phone"></i>1-800-555-555</h3>
+          </div>
+          <div id="courses_section">
+            <div id="courses_info">
+              <h2>Courses</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+              <button type="button" name="button">COURSE INFORMATION</button>
+              <img src="img/new-corner.jpg" alt="">
+
+            </div>
+            <div id="learn_box_container">
+              <div class="box">
+                <img src="img/courses-passplus-200x200.jpg" alt="">
+                <h3> Pass Plus</h3>
+                  <button type="button" name="button">Learn more</button>
+              </div>
+              <div class="box">
+                <img src="img/course-intensive-200x200.jpg" alt="">
+                <h3>Intensive Course</h3>
+                <button type="button" name="button">Learn more</button>
+
+              </div>
+              <div class="box">
+                <img src="img/courses-instructor-200x200.jpg" alt="">
+                <h3>Instructors</h3>
+                <button type="button" name="button">Learn more</button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
       </main>
       <footer></footer>
     </div>

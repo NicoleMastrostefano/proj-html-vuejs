@@ -1,6 +1,5 @@
 header {
   width: $maxWidth;
-  @include defaultLink;
   #header_info {
     height: 40px;
     padding: $wrapperPadding;
@@ -15,16 +14,16 @@ header {
       }
   }
   #header_nav {
+    @include button;
     width: $maxWidth;
     padding: $wrapperPadding;
-    height: 120px;
+    height: 100px;
     position: absolute;
     z-index: 2;
     background-color: rgba(53,54,55,0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     li {
       display: inline-block;
       margin-right: 20px;
@@ -32,6 +31,14 @@ header {
       .active
       {
         color: #69AA53;
+        border-bottom: 3px solid #69AA53;
+      }
+      a {
+        padding-bottom: 10px;
+        &:hover {
+          color: #69AA53;
+          border-bottom: 3px solid #69AA53;
+        }
       }
     }
   }

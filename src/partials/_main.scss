@@ -12,3 +12,131 @@
     margin-bottom: 20px;
   }
 }
+
+#first_lesson {
+  width: $maxWidth;
+  height: 600px;
+  font-size: 22px;
+  padding: $wrapperPadding ;
+  position: relative;
+  color: #A1A7AA;
+  #general_info {
+    width: 45%;
+    h2 {
+      margin-bottom: 40px;
+      padding-top: 80px;
+      color: black;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  #registration_panel {
+    @include button;
+    width: 40%;
+    height: 95%;
+    padding: 30px;
+    position: absolute;
+    background-color: white;
+    right: 10%;
+    top:-30px;
+    box-shadow: 3px 14px 20px 2px rgba(110,100,100,0.26);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    h3 {
+      color: #69AA53;
+      font-weight: bolder;
+    }
+    input {
+      width: 100%;
+      padding: 12px 8px;
+    }
+  }
+}
+
+#courses {
+  width: $maxWidth;
+  height: 700px;
+  background-image: url($coursesBackground);
+  background-position: left;
+  background-size: cover;
+  #car_image {
+    height: 240px;
+    color: white;
+    font-size: 22px;
+    padding: $wrapperPadding;
+    background-image: url($carImage);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+    i {
+      margin-right: 30px;
+    }
+  }
+  #courses_section{
+    width: $maxWidth;
+    padding: $wrapperPadding;
+    position: relative;
+      #courses_info{
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+      box-shadow: 3px 14px 20px 2px rgba(110,100,100,0.26);
+      border-radius: 8px;
+      background-color: white;
+      position: absolute;
+      top:-30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      line-height: 26px;
+      text-align: center;
+      @include button;
+      h2 {
+        font-size: 28px;
+      }
+      p{
+        color: #A1A7AA;
+      }
+      img {
+        height: 80px;
+        position: absolute;
+        top:0;
+        left:0;
+      }
+    }
+    #learn_box_container{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      float: right;
+      height: 290px;
+      width: 60%;
+      .box {
+        color: #7799AD;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        button {
+          background-color: #E7EBEE;
+          padding: 10px 18px;
+          color: #7799AD;
+          border-radius: 20px;
+          border: 2px solid #7799AD;
+        }
+      }
+    }
+  }
+}
