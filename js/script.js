@@ -22,7 +22,7 @@ var app = new Vue(
           name: 'BLOG',
         }
       ],
-      active: 'HOME'
+      active: ''
     },
 
     methods: {

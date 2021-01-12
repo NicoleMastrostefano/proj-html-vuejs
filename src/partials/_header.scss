@@ -9,10 +9,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-      i {
-        margin-right: 10px;
-      }
+    &:hover a {
+      color: white;
+    }
+    i {
+      margin-right: 10px;
+    }
   }
+
   #header_nav {
     @include button;
     width: $maxWidth;
@@ -26,17 +30,19 @@ header {
     align-items: center;
     li {
       display: inline-block;
-      margin-right: 20px;
+      margin-right: 45px;
       color: white;
+      font-weight: bolder;
+      font-size: 14px;
       .active
       {
-        color: #69AA53;
+        color: #7ABC64;
         border-bottom: 3px solid #69AA53;
       }
       a {
         padding-bottom: 10px;
         &:hover {
-          color: #69AA53;
+          color: #7ABC64;
           border-bottom: 3px solid #69AA53;
         }
       }
