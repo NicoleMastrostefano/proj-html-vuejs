@@ -20,7 +20,7 @@
         <div id="header_nav">
           <img src="img/avada-drivers-logo-1x.png" alt="">
           <ul>
-            <li v-for="items in nav"><a href="#">{{items.name}}</a></li>
+            <li v-for="(item,index) in nav"><a href="#"v-on:click="SetActive(index)"v-bind:class="(active == index) ? 'active' : ''">{{item.name}}</a></li>
           </ul>
         </div>
       </header>

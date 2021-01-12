@@ -21,7 +21,15 @@ var app = new Vue(
         {
           name: 'BLOG',
         }
-      ]
-    }
+      ],
+      active: 'HOME'
+    },
+
+    methods: {
+
+		SetActive: function(newIndex){
+			this.active = newIndex;
+		}
+	}
   }
 )
