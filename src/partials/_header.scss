@@ -1,5 +1,6 @@
 header {
   width: $maxWidth;
+
   #header_info {
     height: 40px;
     padding: $wrapperPadding;
@@ -9,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     a {
       text-decoration: none;
       color: #A1A7AA;
@@ -27,5 +29,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      color: white;
+      font-weight:600;
+      a {
+        color: white;
+        font-weight:600;
+        text-decoration: none;
+
+
+      }
+    }
   }
 }
