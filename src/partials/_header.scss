@@ -1,0 +1,31 @@
+header {
+  width: $maxWidth;
+  #header_info {
+    height: 40px;
+    padding: $wrapperPadding;
+    background-color: #353a3e;
+    color: #A1A7AA;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: #A1A7AA;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+  #header_nav {
+    width: $maxWidth;
+    padding: $wrapperPadding;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(53,54,55,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
