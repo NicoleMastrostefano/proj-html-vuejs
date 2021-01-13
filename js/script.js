@@ -33,7 +33,7 @@ var app = new Vue(
           avatar:"img/testimonial-harold.png"
         },
         {
-          name:'Grant     Harvey',
+          name:'Grant Harvey',
           avatar: "img/testimonial-grant.png",
         },
         {
@@ -41,7 +41,7 @@ var app = new Vue(
           avatar:"img/testimonial-kate.png",
         },
         {
-          name: 'Kelly',
+          name: 'Kelly Johnson',
           avatar:"img/testimonial-kelly.png",
         },
       ],
@@ -75,6 +75,6 @@ var app = new Vue(
       dotActive: function(index){
         (this.avatarIndex = index)
       }
-	  }
+    }
   }
 )

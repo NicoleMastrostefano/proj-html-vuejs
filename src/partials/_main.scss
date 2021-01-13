@@ -163,15 +163,13 @@
         padding-bottom: 30px;
         box-shadow: 3px 14px 20px 2px rgba(110,100,100,0.26);
         background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         border-radius: 8px;
         border-top: 6px solid #69AA53;
         .circle {
           width: 200px;
           height: 200px;
-          margin: 60px 0px;
+          margin: 60px auto;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -187,9 +185,9 @@
 #instructors {
   @include button;
   padding: $wrapperPadding;
-  margin-top: 60px;
+  margin-top: 450px;
   width: $maxWidth;
-  height: 1000px;
+  height: 280px;
   font-size: 26px;
   display: flex;
   justify-content: space-between;
@@ -210,6 +208,48 @@
   }
 }
 
+#item_container_wrapper {
+  position: relative;
+  width: $maxWidth;
+  height: 440px;
+  #item_container {
+    position: absolute;
+    top:60px;
+    padding: $wrapperPadding;
+    width: $maxWidth;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .item {
+      width: calc(100% / 3 - 10px);
+      height: 97%;
+      padding: 35px;
+      box-shadow: 3px 14px 20px 2px rgba(110,100,100,0.26);
+      background-color: white;
+      border-radius: 8px;
+      border-top: 6px solid #69AA53;
+      text-align: center;
+      color:#A1A7AA;
+      line-height: 30px;
+      img {
+        width: 90%;
+        padding-bottom: 40px;
+      }
+      h3 {
+        color: black;
+        font-size: 22px;
+      }
+      i {
+        margin-right: 5px;
+      }
+    }
+    #bigger {
+      height: 100%;
+      width: 34%;
+    }
+  }
+}
+
 #testimonial {
   width: $maxWidth;
   height: 820px;
@@ -218,13 +258,14 @@
   background-position: center;
   #carousel{
     font-size: 22px;
-    padding: 120px 0px 70px 0px;
+    padding: 140px 0px 70px 0px;
     text-align: center;
     width: 70%;
     height: 100%;
     margin: auto;
     color:#A1A7AA;
     h2 {
+      font-size: 36px;
       color: black;
       margin-bottom: 20px;
     }
