@@ -17,6 +17,13 @@ body {
   text-decoration: none;
   color: inherit;
 }
+#wrapper li {
+  list-style: none;
+}
+
+p {
+  color: #A1A7AA;
+}
 
 header {
   width: 100%;
@@ -50,11 +57,12 @@ header #header_nav {
 }
 header #header_nav button {
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #7ABC64;
   border-radius: 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
 }
 header #header_nav button:hover {
   background-color: #69AA53;
@@ -72,6 +80,7 @@ header #header_nav li .active {
 }
 header #header_nav li a {
   padding-bottom: 10px;
+  transition: 0.2s;
 }
 header #header_nav li a:hover {
   color: #7ABC64;
@@ -130,11 +139,12 @@ header #header_nav li a:hover {
 }
 #first_lesson #registration_panel button {
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #7ABC64;
   border-radius: 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
 }
 #first_lesson #registration_panel button:hover {
   background-color: #69AA53;
@@ -200,20 +210,18 @@ header #header_nav li a:hover {
 }
 #courses #courses_wrapper #courses_info button {
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #7ABC64;
   border-radius: 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
 }
 #courses #courses_wrapper #courses_info button:hover {
   background-color: #69AA53;
 }
 #courses #courses_wrapper #courses_info h2 {
   font-size: 28px;
-}
-#courses #courses_wrapper #courses_info p {
-  color: #A1A7AA;
 }
 #courses #courses_wrapper #courses_info img {
   height: 80px;
@@ -249,6 +257,7 @@ header #header_nav li a:hover {
   border-radius: 20px;
   border: 2px solid #7799AD;
   cursor: pointer;
+  transition: 0.3s;
 }
 #courses #courses_wrapper #learn_box_container .box button:hover {
   color: #7ABC64;
@@ -272,6 +281,7 @@ header #header_nav li a:hover {
   border-top: 6px solid #69AA53;
 }
 #courses #courses_wrapper #rate_flex_container .item .circle {
+  position: relative;
   width: 200px;
   height: 200px;
   margin: 60px auto;
@@ -281,6 +291,16 @@ header #header_nav li a:hover {
   border-radius: 50%;
   border: 10px solid #F6F6F6;
   font-size: 30px;
+}
+#courses #courses_wrapper #rate_flex_container .item .circle #layover {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #7ABC64;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #instructors {
@@ -295,11 +315,12 @@ header #header_nav li a:hover {
 }
 #instructors button {
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #7ABC64;
   border-radius: 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
 }
 #instructors button:hover {
   background-color: #69AA53;
@@ -309,7 +330,6 @@ header #header_nav li a:hover {
 }
 #instructors #left p {
   margin-top: 40px;
-  color: #A1A7AA;
   font-size: 22px;
   line-height: 34px;
 }
@@ -342,19 +362,28 @@ header #header_nav li a:hover {
   border-radius: 8px;
   border-top: 6px solid #69AA53;
   text-align: center;
-  color: #A1A7AA;
   line-height: 30px;
+  overflow: hidden;
 }
 #item_container_wrapper #item_container .item img {
   width: 90%;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+#item_container_wrapper #item_container .item img:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 14px 20px 2px rgba(110, 100, 100, 0.26);
 }
 #item_container_wrapper #item_container .item h3 {
   color: black;
   font-size: 22px;
 }
 #item_container_wrapper #item_container .item i {
+  color: #A1A7AA;
   margin-right: 5px;
+}
+#item_container_wrapper #item_container .item i:hover {
+  color: #bcc0c2;
 }
 #item_container_wrapper #item_container #bigger {
   height: 100%;
@@ -410,18 +439,19 @@ header #header_nav li a:hover {
   position: relative;
   width: 100%;
   padding: 0% 8%;
-  height: 820px;
+  height: 860px;
   background-image: url("../img/latestnews-background.jpg");
   background-size: cover;
   background-position: center;
 }
 #latest_news_wrapper button {
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #7ABC64;
   border-radius: 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
 }
 #latest_news_wrapper button:hover {
   background-color: #69AA53;
@@ -443,6 +473,11 @@ header #header_nav li a:hover {
   padding-top: 60px;
   font-size: 38px;
 }
+#latest_news_wrapper #latest_news #bottom {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+}
 #latest_news_wrapper #latest_news #car_image_wrapper {
   padding: 0px 60px;
   display: flex;
@@ -459,13 +494,21 @@ header #header_nav li a:hover {
 }
 #latest_news_wrapper #latest_news #car_image_wrapper .car_image_box img {
   width: 90%;
+  transition: 0.6s;
+  cursor: pointer;
+}
+#latest_news_wrapper #latest_news #car_image_wrapper .car_image_box img:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 14px 20px 2px rgba(110, 100, 100, 0.26);
+  border-radius: 5px;
+  opacity: 0.9;
 }
 #latest_news_wrapper #latest_news #car_image_wrapper .car_image_box h3 {
   color: #7ABC64;
-  padding-top: 20px;
+  padding: 20px 0px 10px 0px;
 }
 #latest_news_wrapper #latest_news #car_image_wrapper .car_image_box p {
-  margin-top: 28px;
+  margin-top: 25px;
 }
 
 #newsLetter {
@@ -481,11 +524,12 @@ header #header_nav li a:hover {
 }
 #newsLetter button {
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #7ABC64;
   border-radius: 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
 }
 #newsLetter button:hover {
   background-color: #69AA53;
@@ -499,6 +543,9 @@ header #header_nav li a:hover {
 #newsLetter button {
   width: 45%;
 }
+#newsLetter p {
+  font-size: 14px;
+}
 
 footer {
   color: #A1A7AA;
@@ -511,17 +558,57 @@ footer #footer_top {
   background-image: url("../img/footer-background-color.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 footer #footer_top button {
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #7ABC64;
   border-radius: 20px;
   cursor: pointer;
   border: 0px;
+  transition: 0.3s;
 }
 footer #footer_top button:hover {
   background-color: #69AA53;
+}
+footer #footer_top .wrapper {
+  width: calc(100% / 4 );
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #footer_top .wrapper h3 {
+  color: white;
+  font-size: 16px;
+}
+footer #footer_top #logo {
+  padding-top: 20px;
+  align-items: flex-start;
+  line-height: 30px;
+  font-size: 14px;
+}
+footer #footer_top #logo img {
+  width: 90%;
+  margin-bottom: 15px;
+}
+footer #footer_top #course {
+  align-items: flex-start;
+  padding-left: 20px;
+  color: #7ABC64;
+}
+footer #footer_top #course i {
+  padding: 18px 10px 0px 10px;
+}
+footer #footer_top #prices {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer #footer_top #prices button {
+  margin-right: 40px;
 }
 footer #footer_bottom {
   padding: 0% 8%;
@@ -531,9 +618,17 @@ footer #footer_bottom {
   justify-content: space-between;
   align-items: center;
 }
+footer #footer_bottom a {
+  color: #7ABC64;
+  transition: 0.3s;
+}
+footer #footer_bottom a:hover {
+  color: #9EEB85;
+}
 footer #footer_bottom i {
   padding-left: 10px;
   color: white;
+  transition: 0.3s;
 }
 footer #footer_bottom i:hover {
   color: #A1A7AA;

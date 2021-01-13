@@ -46,6 +46,20 @@ var app = new Vue(
           avatar:"img/testimonial-kelly.png",
         },
       ],
+      footer: [
+        {
+          contact:'Pass Plus',
+        },
+        {
+          contact:'Intensive Course',
+        },
+        {
+          contact: 'Automatic'
+        },
+        {
+          contact:'Instructor Training'
+        },
+      ],
       active: '',
       avatarIndex:0,
       autoplay:""

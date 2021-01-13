@@ -94,6 +94,7 @@
               </div>
               <div class="item">
                 <div class="circle">
+                  <span id="layover">
                   <span>100%</span>
                 </div>
                 <h3>REFERRAL RATE</h3>
@@ -180,6 +181,7 @@
               </div>
             </div>
             <button type="button" name="button">MORE FROM THE BLOG</button>
+            <img id="bottom"src="img/latestnews-bottom-1200x105.png" alt="">
           </div>
         </section>
         <section id="newsLetter">
@@ -190,9 +192,30 @@
         </section>
       </main>
       <!-- /contenuto pagina  -->
+
+      <!-- conclusione pagina  -->
       <footer>
         <div id="footer_top">
-
+          <div id="logo"class="wrapper">
+            <img src="img/avada-drivers-logo-1x.png" alt="">
+            <p>Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.</p>
+          </div>
+          <div id="contact"class="wrapper">
+            <h3>CONTACT DETAILS</h3>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+          <div id="course"class="wrapper">
+            <h3>COURSES</h3>
+            <ul>
+              <li v-for="item in footer"><i class="far fa-arrow-alt-circle-right"></i>{{item.contact}}</li>
+            </ul>
+          </div>
+          <div id="prices"class="wrapper">
+            <img src="img/footer-ad-grid-200x178.png" alt="">
+            <button type="button" name="button">BOOK NOW</button>
+          </div>
         </div>
         <div id="footer_bottom">
           <small>© Copyright 2012 - 2021 | Avada Theme by <a href="#">ThemeFusion </a>| All Rights Reserved | Powered by <a href="#">WordPress</a></small>
@@ -204,6 +227,7 @@
           </div>
         </div>
       </footer>
+      <!-- /conclusione pagina  -->
     </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>

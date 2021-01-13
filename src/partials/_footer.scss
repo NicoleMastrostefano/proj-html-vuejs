@@ -9,6 +9,45 @@ footer {
     background-image: url($footerBackground);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .wrapper {
+      width: calc(100% / 4 );
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        color: white;
+        font-size: 16px;
+      }
+    }
+    #logo {
+      padding-top: 20px;
+      align-items: flex-start;
+      line-height: 30px;
+      font-size: 14px;
+      img {
+        width: 90%;
+        margin-bottom: 15px;
+      }
+    }
+    #course {
+      align-items: flex-start;
+      padding-left: 20px;
+      color: #7ABC64;
+      i {
+        padding:18px 10px 0px 10px;
+      }
+    }
+    #prices {
+      justify-content: space-between;
+      align-items: flex-end;
+      button {
+        margin-right: 40px;
+      }
+    }
   }
   #footer_bottom {
     padding: $wrapperPadding;
@@ -17,9 +56,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a {
+      color: #7ABC64;
+        transition: 0.3s;
+      &:hover{
+        color:#9EEB85;
+      }
+    }
     i {
       padding-left: 10px;
       color: white;
+      transition: 0.3s;
       &:hover {
         color: #A1A7AA;
       }
