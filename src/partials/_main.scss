@@ -83,6 +83,7 @@
     }
   }
   #courses_wrapper{
+    @include clearfix;
     width: $maxWidth;
     padding: $wrapperPadding;
     position: relative;
@@ -163,7 +164,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         border-radius: 8px;
         border-top: 6px solid #69AA53;
         .circle {
@@ -185,8 +185,9 @@
 #instructors {
   @include button;
   padding: $wrapperPadding;
-  margin-top:500px;
+  margin-top: 60px;
   width: $maxWidth;
+  height: 1000px;
   font-size: 26px;
   display: flex;
   justify-content: space-between;
@@ -196,12 +197,29 @@
     p {
       margin-top: 40px;
       color:#A1A7AA;
-      font-size: 20px;
+      font-size: 22px;
       line-height: 34px;
     }
-  }button {
+  }
+  button {
     width: 28%;
     height: 40px;
     margin-top: 60px;
   }
+}
+
+#testimonial {
+  width: $maxWidth;
+  height: 820px;
+  background-image: url($testimonialBackground);
+  background-size: cover;
+  background-position: center;
+}
+
+#latest_news {
+  width: $maxWidth;
+  height: 820px;
+  background-image: url($latestNewsBackground);
+  background-size: cover;
+  background-position: center;
 }
