@@ -135,7 +135,7 @@
         align-items: center;
         justify-content: space-between;
         img {
-          width: 180px;
+          width: 90%;
         }
         button {
           background-color: #E7EBEE;
@@ -252,7 +252,7 @@
 
 #testimonial {
   width: $maxWidth;
-  height: 820px;
+  height: 850px;
   background-image: url($testimonialBackground);
   background-size: cover;
   background-position: center;
@@ -295,10 +295,60 @@
   }
 }
 
-#latest_news {
+#latest_news_wrapper {
+  @include button;
+  position: relative;
   width: $maxWidth;
+  padding: $wrapperPadding;
   height: 820px;
   background-image: url($latestNewsBackground);
   background-size: cover;
   background-position: center;
+
+
+  #latest_news {
+    position: absolute;
+    top: -5%;
+    border-top: 6px solid #7799AD;
+    border-radius: 8px 8px 0px 0px;
+    height: 750px;
+    width: 84%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h2 {
+      padding-top: 60px;
+      font-size: 38px;
+    }
+
+    #car_image_wrapper {
+      padding: 0px  60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 500px;
+      .car_image_box {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        color:#A1A7AA;
+        img {
+        width: 90%;
+        }
+        h3 {
+          color: #7ABC64;
+          padding-top: 20px;
+        }
+        p {
+          margin-top: 28px;
+        }
+      }
+    }
+
+
+
+  }
 }
