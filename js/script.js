@@ -14,6 +14,7 @@ var app = new Vue(
         },
         {
           name: 'COURSES',
+          button:true,
         },
         {
           name: 'LOCATIONS',

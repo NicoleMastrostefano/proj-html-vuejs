@@ -1,0 +1,28 @@
+footer {
+  color: #A1A7AA;
+  width: $maxWidth;
+  height: 550px;
+  #footer_top {
+    @include button;
+    padding: $wrapperPadding;
+    height: 70%;
+    background-image: url($footerBackground);
+    background-size: cover;
+    background-position: center;
+  }
+  #footer_bottom {
+    padding: $wrapperPadding;
+    height: calc(100% - 70%);
+    background-color: #1C1D1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      padding-left: 10px;
+      color: white;
+      &:hover {
+        color: #A1A7AA;
+      }
+    }
+  }
+}

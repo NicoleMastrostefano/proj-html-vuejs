@@ -304,8 +304,6 @@
   background-image: url($latestNewsBackground);
   background-size: cover;
   background-position: center;
-
-
   #latest_news {
     position: absolute;
     top: -5%;
@@ -322,7 +320,6 @@
       padding-top: 60px;
       font-size: 38px;
     }
-
     #car_image_wrapper {
       padding: 0px  60px;
       display: flex;
@@ -347,8 +344,31 @@
         }
       }
     }
-
-
-
   }
+}
+
+
+
+#newsLetter{
+  @include button;
+  width: $maxWidth;
+  height: 400px;
+  background-image: url($newsLetterBackground);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 140px;
+  input {
+    width: 45%;
+    height: 40px;
+    border: 1px solid lightgrey;
+    margin-bottom: 40px;
+  }
+  button {
+    width: 45%;
+  }
+
+
 }
