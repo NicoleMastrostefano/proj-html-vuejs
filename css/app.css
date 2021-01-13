@@ -154,6 +154,7 @@ header #header_nav li a:hover {
   background-image: url("../img/promise-background.jpg");
   background-position: left;
   background-size: cover;
+  border-radius: 90px/30px;
 }
 #courses #car_image {
   height: 240px;
@@ -306,7 +307,7 @@ header #header_nav li a:hover {
   background-color: #69AA53;
 }
 #instructors #left {
-  width: 70%;
+  width: 65%;
 }
 #instructors #left p {
   margin-top: 40px;
@@ -326,6 +327,42 @@ header #header_nav li a:hover {
   background-image: url("../img/testimonial-background.jpg");
   background-size: cover;
   background-position: center;
+}
+#testimonial #carousel {
+  font-size: 22px;
+  padding: 120px 0px 70px 0px;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  color: #A1A7AA;
+}
+#testimonial #carousel h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+#testimonial #carousel h4 {
+  font-weight: normal;
+}
+#testimonial #carousel p {
+  font-style: oblique;
+  margin-bottom: 28px;
+}
+#testimonial #carousel #avatar_circle {
+  margin: 50px auto;
+}
+#testimonial #carousel #avatar_circle img {
+  width: 170px;
+  border-radius: 50%;
+}
+#testimonial #carousel .dots {
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+#testimonial #carousel .dots i {
+  font-size: 14px;
+  margin-right: 8px;
 }
 
 #latest_news {

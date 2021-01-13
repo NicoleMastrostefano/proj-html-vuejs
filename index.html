@@ -12,11 +12,13 @@
   </head>
   <body>
     <div id="wrapper">
+      <!-- intestazione pagina -->
       <header>
         <div id="header_info">
           <p>We have a 95% Successful Pass Rate!</p>
           <a href="#"><i class="fas fa-phone"></i>Give us a call to book your tuition! 1-800-555-555</a>
         </div>
+        <!-- navbar -->
         <div id="header_nav">
           <img src="img/avada-drivers-logo-1x.png" alt="">
           <ul>
@@ -24,7 +26,11 @@
             <button type="button" name="">BOOK NOW</button>
           </ul>
         </div>
+        <!-- /navbar -->
       </header>
+      <!-- /intestazione pagina -->
+
+      <!-- contenuto pagina  -->
       <main>
         <div id="jumbotron">
           <h1>Drive with Avada</h1>
@@ -114,12 +120,23 @@
           </div>
         </section>
         <section id="testimonial">
-
+          <div id="carousel">
+            <h2>Testimonials</h2>
+            <h4>Here’s what our happy drivers had to say about our services:</h4>
+            <div id="avatar_circle">
+              <img v-bind:src="testimonials[avatarIndex].avatar" alt="">
+            </div>
+            <p>Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.</p>
+            <strong v-for="(testimonial,index) in testimonials"v-if="index==avatarIndex">{{testimonial.name}}</strong>
+            <div class="dots">
+              <i v-for="(testimonial,index) in testimonials":class="(index==avatarIndex)? 'fas': 'far'"class="fa-circle"  @click="dotActive(index)"></i>
+            </div>
+          </div>
         </section>
         <section id="latest_news">
-
         </section>
       </main>
+      <!-- /contenuto pagina  -->
       <footer></footer>
     </div>
     <script src="js/script.js" charset="utf-8"></script>

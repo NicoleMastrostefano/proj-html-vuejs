@@ -64,6 +64,8 @@
   background-image: url($coursesBackground);
   background-position: left;
   background-size: cover;
+  border-radius: 90px/30px;
+
   #car_image {
     height: 240px;
     color: white;
@@ -193,7 +195,7 @@
   justify-content: space-between;
   align-items: center;
   #left {
-    width: 70%;
+    width:65%;
     p {
       margin-top: 40px;
       color:#A1A7AA;
@@ -214,6 +216,42 @@
   background-image: url($testimonialBackground);
   background-size: cover;
   background-position: center;
+  #carousel{
+    font-size: 22px;
+    padding: 120px 0px 70px 0px;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    color:#A1A7AA;
+    h2 {
+      color: black;
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-weight: normal;
+    }
+    p {
+      font-style: oblique;
+      margin-bottom: 28px;
+    }
+    #avatar_circle {
+      margin: 50px auto;
+      img {
+        width: 170px;
+        border-radius: 50%;
+      }
+    }
+    .dots{
+      margin-top: 30px;
+      cursor: pointer;
+      border-radius:20px;
+       i {
+        font-size: 14px;
+        margin-right:8px;
+      }
+    }
+  }
 }
 
 #latest_news {
