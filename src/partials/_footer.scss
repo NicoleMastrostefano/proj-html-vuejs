@@ -21,6 +21,7 @@ footer {
       h3 {
         color: white;
         font-size: 16px;
+        margin-bottom: 15px;
       }
     }
     #logo {
@@ -33,12 +34,20 @@ footer {
         margin-bottom: 15px;
       }
     }
+    #contact {
+      padding-left: 30px;
+      align-items: flex-start;
+      li {
+        padding-bottom: 15px;
+      }
+      i {padding:10px 10px 0px 10px;}
+    }
     #course {
       align-items: flex-start;
       padding-left: 20px;
       color: #7ABC64;
       i {
-        padding:18px 10px 0px 10px;
+        padding:10px 10px 0px 10px;
       }
     }
     #prices {

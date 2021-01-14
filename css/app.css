@@ -584,6 +584,7 @@ footer #footer_top .wrapper {
 footer #footer_top .wrapper h3 {
   color: white;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 footer #footer_top #logo {
   padding-top: 20px;
@@ -595,13 +596,23 @@ footer #footer_top #logo img {
   width: 90%;
   margin-bottom: 15px;
 }
+footer #footer_top #contact {
+  padding-left: 30px;
+  align-items: flex-start;
+}
+footer #footer_top #contact li {
+  padding-bottom: 15px;
+}
+footer #footer_top #contact i {
+  padding: 10px 10px 0px 10px;
+}
 footer #footer_top #course {
   align-items: flex-start;
   padding-left: 20px;
   color: #7ABC64;
 }
 footer #footer_top #course i {
-  padding: 18px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
 }
 footer #footer_top #prices {
   justify-content: space-between;

@@ -203,7 +203,11 @@
           <div id="contact"class="wrapper">
             <h3>CONTACT DETAILS</h3>
             <ul>
-              <li></li>
+              <li v-for="item in contacts">
+                <small>{{item.info}}</small></li>
+              <!-- <li><a href="#"><i class="fas fa-phone"></i></a></li>
+              <li><a href="#"><i class="far fa-envelope"></i></a></li>
+              <li><a href="#"><i class="fas fa-link"></i></a></li> -->
             </ul>
           </div>
           <div id="course"class="wrapper">
@@ -217,6 +221,7 @@
             <button type="button" name="button">BOOK NOW</button>
           </div>
         </div>
+
         <div id="footer_bottom">
           <small>© Copyright 2012 - 2021 | Avada Theme by <a href="#">ThemeFusion </a>| All Rights Reserved | Powered by <a href="#">WordPress</a></small>
           <div>

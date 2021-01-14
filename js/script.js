@@ -60,6 +60,21 @@ var app = new Vue(
           contact:'Instructor Training'
         },
       ],
+      contacts: [
+        {
+          info:'12345 North Main Street, New York NY, 555555',
+
+        },
+        {
+          info:'1.800.555.6789',
+        },
+        {
+          info:'info@your-domain.com',
+        },
+        {
+          info:'Theme-Fusion.com',
+        }
+      ],
       active: '',
       avatarIndex:0,
       autoplay:""
