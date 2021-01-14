@@ -86,6 +86,13 @@ header #header_nav li a:hover {
   color: #7ABC64;
   border-bottom: 3px solid #69AA53;
 }
+header #header_nav li #smaller {
+  margin-left: 5px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-size: 0.7em;
+  vertical-align: middle;
+}
 
 #jumbotron {
   height: 600px;
@@ -292,7 +299,15 @@ header #header_nav li a:hover {
   border: 10px solid #F6F6F6;
   font-size: 30px;
 }
-#courses #courses_wrapper #rate_flex_container .item .circle #layover {
+#courses #courses_wrapper #rate_flex_container .item .circle #layover_dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -10px;
+  background-color: #7ABC64;
+}
+#courses #courses_wrapper #rate_flex_container .item .circle .layover {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -301,6 +316,11 @@ header #header_nav li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#courses #courses_wrapper #rate_flex_container .item .circle #layover_notch {
+  border-left-color: transparent;
+  transform: rotate(70deg);
+  border-left: none;
 }
 
 #instructors {
@@ -612,7 +632,7 @@ footer #footer_top #course {
   color: #7ABC64;
 }
 footer #footer_top #course i {
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
 }
 footer #footer_top #prices {
   justify-content: space-between;

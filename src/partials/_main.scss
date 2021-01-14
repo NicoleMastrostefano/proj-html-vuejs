@@ -174,7 +174,15 @@
           border-radius: 50%;
           border: 10px solid #F6F6F6;
           font-size: 30px;
-          #layover {
+          #layover_dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: -10px;
+            background-color: #7ABC64;
+          }
+          .layover{
             position: absolute;
             width: 200px;
             height:200px;
@@ -184,6 +192,12 @@
             align-items: center;
             justify-content: center;
           }
+          #layover_notch {
+            border-left-color: transparent;
+            transform: rotate(70deg);
+            border-left: none;
+          }
+
         }
       }
     }

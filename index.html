@@ -22,7 +22,8 @@
         <div id="header_nav">
           <img src="img/avada-drivers-logo-1x.png" alt="">
           <ul>
-            <li v-for="(item,index) in nav"><a href="#"v-on:click="SetActive(index)"v-bind:class="(active == index) ? 'active' : ''">{{item.name}}</a></li>
+            <li v-for="(item,index) in headerNav"><a :href="item.link" v-on:click="SetActive(index)" v-bind:class="(active == index) ? 'active' : ''">{{item.name}}</a>
+            <button id="smaller" v-if="item.new"type="button">NEW</button></li>
             <button type="button" name="">BOOK NOW</button>
           </ul>
         </div>
@@ -88,19 +89,21 @@
             <div id="rate_flex_container">
               <div class="item">
                 <div class="circle">
+                  <span id="layover_notch"class="layover"></span>
                   <span>95%</span>
                 </div>
                 <h3>PASS RATE</h3>
               </div>
               <div class="item">
                 <div class="circle">
-                  <span id="layover">
+                  <span class="layover">
                   <span>100%</span>
                 </div>
                 <h3>REFERRAL RATE</h3>
               </div>
               <div class="item">
                 <div class="circle">
+                  <span id="layover_dot"></span>
                   <span>0%</span>
                 </div>
               <h3>ACCIDENT RATE</h3>
@@ -203,7 +206,7 @@
           <div id="contact"class="wrapper">
             <h3>CONTACT DETAILS</h3>
             <ul>
-              <li v-for="item in contacts">
+              <li v-for="item in footerContacts">
                 <small>{{item.info}}</small></li>
               <!-- <li><a href="#"><i class="fas fa-phone"></i></a></li>
               <li><a href="#"><i class="far fa-envelope"></i></a></li>
@@ -213,7 +216,7 @@
           <div id="course"class="wrapper">
             <h3>COURSES</h3>
             <ul>
-              <li v-for="item in footer"><i class="far fa-arrow-alt-circle-right"></i>{{item.contact}}</li>
+              <li v-for="item in footerCourses"><i class="far fa-arrow-alt-circle-right"></i>{{item.contact}}</li>
             </ul>
           </div>
           <div id="prices"class="wrapper">

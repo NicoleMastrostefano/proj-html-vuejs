@@ -2,25 +2,36 @@ var app = new Vue(
   {
     el: '#wrapper',
     data: {
-      nav: [
+      headerNav: [
         {
           name: 'HOME',
+          new:false,
+          link:'#',
         },
         {
           name: 'ABOUT',
+          new:false,
+          link:'#',
         },
         {
           name: 'PRIECES',
+          new:false,
+          link:'#',
         },
         {
           name: 'COURSES',
-          button:true,
+          new:true,
+          link:'#',
         },
         {
           name: 'LOCATIONS',
+          new:false,
+          link:'#',
         },
         {
           name: 'BLOG',
+          new:false,
+          link:'#',
         }
       ],
 
@@ -46,7 +57,7 @@ var app = new Vue(
           avatar:"img/testimonial-kelly.png",
         },
       ],
-      footer: [
+      footerCourses: [
         {
           contact:'Pass Plus',
         },
@@ -60,8 +71,9 @@ var app = new Vue(
           contact:'Instructor Training'
         },
       ],
-      contacts: [
+      footerContacts: [
         {
+          icon:'fa-home',
           info:'12345 North Main Street, New York NY, 555555',
 
         },
