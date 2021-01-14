@@ -554,6 +554,9 @@ header #header_nav li #smaller {
 #newsLetter button:hover {
   background-color: #69AA53;
 }
+#newsLetter h2 {
+  font-size: 28px;
+}
 #newsLetter input {
   width: 45%;
   height: 40px;
@@ -631,6 +634,13 @@ footer #footer_top #course {
   padding-left: 20px;
   color: #7ABC64;
 }
+footer #footer_top #course a {
+  color: #7ABC64;
+  transition: 0.3s;
+}
+footer #footer_top #course a:hover {
+  color: #9EEB85;
+}
 footer #footer_top #course i {
   padding: 10px 10px 10px 10px;
 }
@@ -656,11 +666,10 @@ footer #footer_bottom a {
 footer #footer_bottom a:hover {
   color: #9EEB85;
 }
-footer #footer_bottom i {
+footer #footer_bottom a {
   padding-left: 10px;
-  color: white;
   transition: 0.3s;
 }
-footer #footer_bottom i:hover {
+footer #footer_bottom a:hover {
   color: #A1A7AA;
 }

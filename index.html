@@ -207,16 +207,16 @@
             <h3>CONTACT DETAILS</h3>
             <ul>
               <li v-for="item in footerContacts">
-                <small>{{item.info}}</small></li>
-              <!-- <li><a href="#"><i class="fas fa-phone"></i></a></li>
-              <li><a href="#"><i class="far fa-envelope"></i></a></li>
-              <li><a href="#"><i class="fas fa-link"></i></a></li> -->
+              <i v-bind:class="[getIcon(item.icon)]"></i>
+                <a href="item.link"><small>{{item.info}}</small></a></li>
             </ul>
           </div>
           <div id="course"class="wrapper">
             <h3>COURSES</h3>
             <ul>
-              <li v-for="item in footerCourses"><i class="far fa-arrow-alt-circle-right"></i>{{item.contact}}</li>
+              <li v-for="item in footerCourses"><a href="item.link">
+                <i class="far fa-arrow-alt-circle-right"></i>{{item.contact}}</a>
+              </li>
             </ul>
           </div>
           <div id="prices"class="wrapper">

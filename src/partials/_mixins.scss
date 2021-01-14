@@ -28,3 +28,13 @@
     }
   }
 }
+
+@mixin link {
+  a {
+    color: #7ABC64;
+      transition: 0.3s;
+    &:hover{
+      color:#9EEB85;
+    }
+  }
+}

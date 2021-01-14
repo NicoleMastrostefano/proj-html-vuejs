@@ -43,6 +43,7 @@ footer {
       i {padding:10px 10px 0px 10px;}
     }
     #course {
+      @include link;
       align-items: flex-start;
       padding-left: 20px;
       color: #7ABC64;
@@ -59,26 +60,19 @@ footer {
     }
   }
   #footer_bottom {
+    @include link;
     padding: $wrapperPadding;
     height: calc(100% - 70%);
     background-color: #1C1D1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a {
-      color: #7ABC64;
+        a {
+        padding-left: 10px;
         transition: 0.3s;
-      &:hover{
-        color:#9EEB85;
-      }
-    }
-    i {
-      padding-left: 10px;
-      color: white;
-      transition: 0.3s;
-      &:hover {
-        color: #A1A7AA;
-      }
+        &:hover {
+          color: #A1A7AA;
+        }
     }
   }
 }

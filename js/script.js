@@ -60,31 +60,42 @@ var app = new Vue(
       footerCourses: [
         {
           contact:'Pass Plus',
+          link:'#',
         },
         {
           contact:'Intensive Course',
+          link:'#',
         },
         {
-          contact: 'Automatic'
+          contact: 'Automatic',
+          link:'#',
         },
         {
-          contact:'Instructor Training'
+          contact:'Instructor Training',
+          link:'#',
+
         },
       ],
       footerContacts: [
         {
-          icon:'fa-home',
+          icon:'home',
           info:'12345 North Main Street, New York NY, 555555',
-
+          link:'#',
         },
         {
+          icon:'phone',
           info:'1.800.555.6789',
+          link:'#',
         },
         {
+          icon:'envelope',
           info:'info@your-domain.com',
+          link:'#',
         },
         {
+          icon:'link',
           info:'Theme-Fusion.com',
+          link:'#',
         }
       ],
       active: '',
@@ -100,6 +111,7 @@ var app = new Vue(
     },
 
     methods: {
+
       // funzione per attivare link navbar
   		SetActive: function(newIndex){
   			this.active = newIndex;
@@ -116,7 +128,12 @@ var app = new Vue(
       // funzione per attivare il dot
       dotActive: function(index){
         (this.avatarIndex = index)
-      }
+      },
+
+      // funzione per generare icone fontawesome
+      getIcon:function(icon) {
+         return 'fa fa-'+icon;
+      },
     }
   }
 )
