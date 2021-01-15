@@ -67,12 +67,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-        a {
-        padding-left: 10px;
+    li {
+      display: inline-block;
+      padding-left: 18px;
+      a {
+        color: white;
         transition: 0.3s;
         &:hover {
           color: #A1A7AA;
         }
+      }
     }
   }
 }

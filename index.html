@@ -22,10 +22,12 @@
         <div id="header_nav">
           <img src="img/avada-drivers-logo-1x.png" alt="">
           <ul>
-            <li v-for="(item,index) in headerNav"><a :href="item.link" v-on:click="SetActive(index)" v-bind:class="(active == index) ? 'active' : ''">{{item.name}}</a>
+            <li v-for="(item,index) in headerNav">
+              <a :href="item.link" v-on:click="SetActive(index)" v-bind:class="(active == index) ? 'active' : ''">{{ item.name }}</a>
             <button id="smaller" v-if="item.new"type="button">NEW</button></li>
-            <button type="button" name="">BOOK NOW</button>
-          </ul>
+            <button type="button" onclick="location.href='https://avada.theme-fusion.com/driving/book-now/';"name="">BOOK NOW
+            </button>
+        </ul>
         </div>
         <!-- /navbar -->
       </header>
@@ -34,6 +36,10 @@
       <!-- contenuto pagina  -->
       <main>
         <div id="jumbotron">
+          <div id="popup">
+            <div class="square"><img src="img/popup-icon.png" alt=""> Demos</div>
+            <div class="square"><span><small>$</small>39</span>On sale</div>
+          </div>
           <h1>Drive with Avada</h1>
           <h4>We offer the finest driving tuition money can buy</h4>
         </div>
@@ -47,7 +53,8 @@
           <div id="registration_panel">
             <h3>First Lesson Free!</h3>
             <small>When you make a block booking with us your first lesson is included free.</small>
-            <input type="text" name="" value=""placeholder="Your name*">
+
+            <span id="relative"><input id="relative"type="text" name="" value=""placeholder="Your name*"><img src="img/image.png" alt=""></span>
             <input type="email"placeholder="Email*">
             <input type="text" name="" value=""placeholder="Telephone">
             <input type="text" name="" value=""placeholder="Location">
@@ -160,7 +167,7 @@
               <img v-bind:src="testimonials[avatarIndex].avatar" alt="">
             </div>
             <p>Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.</p>
-            <strong v-for="(testimonial,index) in testimonials"v-if="index==avatarIndex">{{testimonial.name}}</strong>
+            <strong v-for="(testimonial,index) in testimonials"v-if="index==avatarIndex">{{ testimonial.name }}</strong>
             <div class="dots">
               <i v-for="(testimonial,index) in testimonials":class="(index==avatarIndex)? 'fas': 'far'"class="fa-circle"  @click="dotActive(index)"></i>
             </div>
@@ -207,32 +214,32 @@
             <h3>CONTACT DETAILS</h3>
             <ul>
               <li v-for="item in footerContacts">
-              <i v-bind:class="[getIcon(item.icon)]"></i>
-                <a href="item.link"><small>{{item.info}}</small></a></li>
+              <i v-bind:class="item.icon"></i>
+                <small>{{ item.info }}</small></li>
             </ul>
           </div>
           <div id="course"class="wrapper">
             <h3>COURSES</h3>
             <ul>
-              <li v-for="item in footerCourses"><a href="item.link">
-                <i class="far fa-arrow-alt-circle-right"></i>{{item.contact}}</a>
+              <li v-for="item in footerCourses">
+                <a :href="item.link">
+                <i class="far fa-arrow-alt-circle-right"></i>{{ item.contact }}</a>
               </li>
             </ul>
           </div>
           <div id="prices"class="wrapper">
             <img src="img/footer-ad-grid-200x178.png" alt="">
-            <button type="button" name="button">BOOK NOW</button>
+            <button type="button" onclick="location.href='https://avada.theme-fusion.com/driving/book-now/';"name="">BOOK NOW
+            </button>
           </div>
         </div>
-
         <div id="footer_bottom">
-          <small>© Copyright 2012 - 2021 | Avada Theme by <a href="#">ThemeFusion </a>| All Rights Reserved | Powered by <a href="#">WordPress</a></small>
-          <div>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
+          <small>© Copyright 2012 - 2021 | Avada Theme by <a href="https://theme-fusion.com/">ThemeFusion </a>| All Rights Reserved | Powered by <a href="https://wordpress.org/">WordPress</a></small>
+          <ul>
+            <li v-for="item in footerBottom">
+              <a :href="item.link"><i v-bind:class="item.icon"></i></a>
+            </li>
+          </ul>
         </div>
       </footer>
       <!-- /conclusione pagina  -->

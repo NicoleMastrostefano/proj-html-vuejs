@@ -6,32 +6,32 @@ var app = new Vue(
         {
           name: 'HOME',
           new:false,
-          link:'#',
+          link:'#home',
         },
         {
           name: 'ABOUT',
           new:false,
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/about/',
         },
         {
           name: 'PRIECES',
           new:false,
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/prices/',
         },
         {
           name: 'COURSES',
           new:true,
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/courses/',
         },
         {
           name: 'LOCATIONS',
           new:false,
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/locations/',
         },
         {
           name: 'BLOG',
           new:false,
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/blog/',
         }
       ],
 
@@ -60,42 +60,56 @@ var app = new Vue(
       footerCourses: [
         {
           contact:'Pass Plus',
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/courses/intensive-driving-course/',
         },
         {
           contact:'Intensive Course',
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/courses/intensive-driving-course/',
         },
         {
           contact: 'Automatic',
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/courses/intensive-driving-course/',
         },
         {
           contact:'Instructor Training',
-          link:'#',
+          link:'https://avada.theme-fusion.com/driving/courses/intensive-driving-course/',
 
         },
       ],
       footerContacts: [
         {
-          icon:'home',
+          icon:'fas fa-home',
           info:'12345 North Main Street, New York NY, 555555',
-          link:'#',
         },
         {
-          icon:'phone',
+          icon:'fas fa-phone',
           info:'1.800.555.6789',
-          link:'#',
         },
         {
-          icon:'envelope',
+          icon:'far fa-envelope',
           info:'info@your-domain.com',
-          link:'#',
         },
         {
-          icon:'link',
+          icon:'fas fa-link',
           info:'Theme-Fusion.com',
-          link:'#',
+        }
+      ],
+      footerBottom: [
+        {
+          icon:'fab fa-facebook-f',
+          link:'https://www.facebook.com/ThemeFusionAvada/',
+        },
+        {
+          icon:'fab fa-twitter',
+          link:'https://twitter.com/Theme_Fusion',
+        },
+        {
+          icon:'fab fa-youtube',
+          link:'https://www.youtube.com/channel/UC_C7uAOAH9RMzZs-CKCZ62w',
+        },
+        {
+          icon:'fab fa-instagram',
+          link:'https://www.instagram.com/themefusion/',
         }
       ],
       active: '',
@@ -128,11 +142,6 @@ var app = new Vue(
       // funzione per attivare il dot
       dotActive: function(index){
         (this.avatarIndex = index)
-      },
-
-      // funzione per generare icone fontawesome
-      getIcon:function(icon) {
-         return 'fa fa-'+icon;
       },
     }
   }
