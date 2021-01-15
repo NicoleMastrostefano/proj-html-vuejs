@@ -27,7 +27,7 @@
             <button id="smaller" v-if="item.new"type="button">NEW</button></li>
             <button type="button" onclick="location.href='https://avada.theme-fusion.com/driving/book-now/';"name="">BOOK NOW
             </button>
-        </ul>
+          </ul>
         </div>
         <!-- /navbar -->
       </header>
@@ -53,8 +53,9 @@
           <div id="registration_panel">
             <h3>First Lesson Free!</h3>
             <small>When you make a block booking with us your first lesson is included free.</small>
-
-            <span id="relative"><input id="relative"type="text" name="" value=""placeholder="Your name*"><img src="img/image.png" alt=""></span>
+            <span id="relative">
+              <input id="relative"type="text" name="" value=""placeholder="Your name*"><img src="img/image.png" alt="">
+            </span>
             <input type="email"placeholder="Email*">
             <input type="text" name="" value=""placeholder="Telephone">
             <input type="text" name="" value=""placeholder="Location">
@@ -80,7 +81,7 @@
               <div class="box">
                 <img src="img/courses-passplus-200x200.jpg" alt="">
                 <h3> Pass Plus</h3>
-                  <button type="button" name="button">Learn more</button>
+                <button type="button" name="button">Learn more</button>
               </div>
               <div class="box">
                 <img src="img/course-intensive-200x200.jpg" alt="">
@@ -113,7 +114,7 @@
                   <span id="layover_dot"></span>
                   <span>0%</span>
                 </div>
-              <h3>ACCIDENT RATE</h3>
+                <h3>ACCIDENT RATE</h3>
               </div>
             </div>
           </div>
@@ -131,9 +132,9 @@
               <img src="img/instructor-mikehart-400x254.jpg" alt="">
               <h3>Mike Hart</h3>
               <div>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <ul>
+                  <li v-for="item in social"><a :href="item.link"><i :class="item.icon"></i></a></li>
+                </ul>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -141,9 +142,9 @@
               <img src="img/instructor-johnsmith-400x254.jpg" alt="">
               <h3>John Smith</h3>
               <div>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <ul>
+                  <li v-for="item in social"><a :href="item.link"><i :class="item.icon"></i></a></li>
+                </ul>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -151,9 +152,9 @@
               <img src="img/instructor-angelahart-400x254.jpg" alt="">
               <h3>Angela Hart</h3>
               <div>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <ul>
+                  <li v-for="item in social"><a :href="item.link"><i :class="item.icon"></i></a></li>
+                </ul>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -229,7 +230,7 @@
           </div>
           <div id="prices"class="wrapper">
             <img src="img/footer-ad-grid-200x178.png" alt="">
-            <button type="button" onclick="location.href='https://avada.theme-fusion.com/driving/book-now/';"name="">BOOK NOW
+            <button type="button" onclick="location.href='https://avada.theme-fusion.com/driving/book-now/'"name="">BOOK NOW
             </button>
           </div>
         </div>

@@ -127,11 +127,12 @@ header #header_nav li #smaller {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  transition: all 0.1s;
+  transition: all 0.4s;
+  box-shadow: 3px 14px 20px 2px rgba(110, 100, 100, 0.26);
 }
 #jumbotron #popup .square:hover {
   cursor: pointer;
-  border: 2px solid #353A3D;
+  border: 1px solid #3F4145;
   border-radius: 3px;
 }
 #jumbotron #popup .square img {
@@ -460,11 +461,14 @@ header #header_nav li #smaller {
   color: black;
   font-size: 22px;
 }
-#item_container_wrapper #item_container .item i {
-  color: #A1A7AA;
-  margin-right: 5px;
+#item_container_wrapper #item_container .item li {
+  display: inline-block;
+  margin-right: 10px;
 }
-#item_container_wrapper #item_container .item i:hover {
+#item_container_wrapper #item_container .item li i {
+  color: #A1A7AA;
+}
+#item_container_wrapper #item_container .item li i:hover {
   color: #bcc0c2;
 }
 #item_container_wrapper #item_container #bigger {

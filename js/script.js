@@ -35,6 +35,21 @@ var app = new Vue(
         }
       ],
 
+      social:[
+        {
+          icon:  "fab fa-facebook-f",
+          link:'https://www.facebook.com',
+        },
+        {
+          icon:"fab fa-twitter",
+          link:'https://twitter.com/twitter'
+        },
+        {
+          icon: "fab fa-instagram",
+          link:'https://www.instagram.com'
+        }
+      ],
+
       testimonials:[
         {
           name: 'Sophia Jones',
@@ -57,6 +72,7 @@ var app = new Vue(
           avatar:"img/testimonial-kelly.png",
         },
       ],
+
       footerCourses: [
         {
           contact:'Pass Plus',
@@ -76,10 +92,11 @@ var app = new Vue(
 
         },
       ],
+
       footerContacts: [
         {
           icon:'fas fa-home',
-          info:'12345 North Main Street, New York NY, 555555',
+          info:'12th Street, New York, 55555',
         },
         {
           icon:'fas fa-phone',
@@ -94,6 +111,7 @@ var app = new Vue(
           info:'Theme-Fusion.com',
         }
       ],
+
       footerBottom: [
         {
           icon:'fab fa-facebook-f',
@@ -142,7 +160,7 @@ var app = new Vue(
       // funzione per attivare il dot
       dotActive: function(index){
         (this.avatarIndex = index)
-      },
+      }
     }
   }
 )

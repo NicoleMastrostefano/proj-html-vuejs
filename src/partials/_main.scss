@@ -29,10 +29,11 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      transition: all 0.1s;
+      transition: all 0.4s;
+      box-shadow: 3px 14px 20px 2px rgba(110,100,100,0.26);
       &:hover {
         cursor: pointer;
-        border: 2px solid #353A3D;
+        border: 1px solid #3F4145;
         border-radius: 3px;
       }
        img {
@@ -328,11 +329,14 @@
         color: black;
         font-size: 22px;
       }
-      i {
-        color:#A1A7AA;
-        margin-right: 5px;
-        &:hover {
-          color: lighten(#A1A7AA, 10%);
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        i {
+          color:#A1A7AA;
+          &:hover {
+            color: lighten(#A1A7AA, 10%);
+          }
         }
       }
     }
